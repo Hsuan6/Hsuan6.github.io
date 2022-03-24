@@ -46,13 +46,13 @@
 .education-item{
     display:flex;
     align-items:center;
-    width: 50%;
+    width: 33.33333%;
 }
 .education-item .logo{
-    width:30%;
+    width:20%;
 }
 .education-item .logo img{
-    width:80%;
+    width:100%;
 }
 .education-item ul li{
     list-style: none;
@@ -94,3 +94,32 @@
 
 
   }
+  @media screen and (max-width: 992px) {
+
+    .avatar,
+    .avatar>img {
+        width: 100%;
+    }
+
+    .avatar {
+        max-width: 150px;
+    }
+
+    .intro-block>.row {
+        flex-direction: column;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .education-item {
+        width: 50%;
+    }
+}
+  @media screen and (max-width: 768px) {
+
+    .education-item {
+        width: 100%;
+    }
+}
